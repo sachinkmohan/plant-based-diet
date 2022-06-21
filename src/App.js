@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './plant.svg';
 import './App.css';
 
 function App() {
@@ -7,15 +7,27 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Welcome to the plant based diet website!! <br></br>
+
+          <br></br>
+          Inspired by Game Changers documentary on Netflix!
+          <br></br><br></br>
+          This website is an initiative by Sachin, RK and Asmita!!  <br></br>
+          <br></br>
+
+          We are looking for contributors. <br></br>
+
+          Ankit, are you interested? <br></br>
+          Sid, are you interested? <br></br>
+          Shilpa, are you interested? <br></br>
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://gamechangersmovie.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Follow this link to enlightenment..
         </a>
       </header>
     </div>
