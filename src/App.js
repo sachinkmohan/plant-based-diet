@@ -1,5 +1,33 @@
+import { createTheme, ThemeProvider } from '@material-ui/core/styles';
+import CustomBtn from './components/CustomBtn';
 import logo from './plant.svg';
 import './App.css';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main:"#2e1667",
+    },
+    secondary: {
+      main:"#c7d8ed",
+    },
+  },
+  typography: {
+    fontFamily: [
+      'Roboto'
+    ],
+    h4: {
+      fontWeight: 600,
+      fontSize: 28,
+      lineHeight: '2rem',
+      },
+    h5: {
+      fontWeight: 100,
+      lineHeight: '2rem',
+    },
+  },
+});
+
 
 function App() {
   return (
@@ -17,9 +45,7 @@ function App() {
 
           We are looking for contributors. <br></br>
 
-          Ankit, are you interested? <br></br>
-          Sid, are you interested? <br></br>
-          Shilpa, are you interested? <br></br>
+          Prabha, are you interested? <br></br>
         </p>
         <a
           className="App-link"
@@ -30,6 +56,9 @@ function App() {
           Follow this link to enlightenment..
         </a>
       </header>
+      <ThemeProvider theme={theme}>
+        <CustomBtn txt='Do nothing button'/>
+      </ThemeProvider>
     </div>
   );
 }
